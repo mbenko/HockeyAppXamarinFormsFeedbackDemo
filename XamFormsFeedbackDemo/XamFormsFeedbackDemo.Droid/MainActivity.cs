@@ -17,7 +17,7 @@ namespace XamFormsFeedbackDemo.Droid
 	public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
 	{
         // --- Add Globals
-        public static string HOCKEYAPP_APPID = "c4695faeedb14c4b98635838fe763d8c";
+        public static string HOCKEYAPP_APPID = "<My HockeyApp ID>";
         public static Android.App.Activity current;
 
         protected override void OnCreate (Bundle bundle)
@@ -54,7 +54,6 @@ namespace XamFormsFeedbackDemo.Droid
         {
             FeedbackManager.SetActivityForScreenshot(MainActivity.current);
             FeedbackManager.TakeScreenshot(MainActivity.current);
-
             FeedbackManager.ShowFeedbackActivity(MainActivity.current);
         }
 
